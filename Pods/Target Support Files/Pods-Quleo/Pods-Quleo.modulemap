@@ -1,0 +1,6 @@
+framework module Pods_Quleo {
+  umbrella header "Pods-Quleo-umbrella.h"
+
+  export *
+  module * { export * }
+}
