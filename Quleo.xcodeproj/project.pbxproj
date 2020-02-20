@@ -15,6 +15,9 @@
 		9E13114C23FEC51B00622A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E13114A23FEC51B00622A18 /* LaunchScreen.storyboard */; };
 		9E13115723FEC51C00622A18 /* QuleoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13115623FEC51C00622A18 /* QuleoTests.swift */; };
 		9E13116223FEC51C00622A18 /* QuleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13116123FEC51C00622A18 /* QuleoUITests.swift */; };
+		DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0123FECE66001E5501 /* GameViewController1.swift */; };
+		DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27AE0323FECEA6001E5501 /* GameScene1.sks */; };
+		DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9E13115D23FEC51C00622A18 /* QuleoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuleoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E13116123FEC51C00622A18 /* QuleoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuleoUITests.swift; sourceTree = "<group>"; };
 		9E13116323FEC51C00622A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA27AE0123FECE66001E5501 /* GameViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController1.swift; sourceTree = "<group>"; };
+		DA27AE0323FECEA6001E5501 /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
+		DA27AE0523FECEE1001E5501 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				9E13114823FEC51B00622A18 /* Assets.xcassets */,
 				9E13114A23FEC51B00622A18 /* LaunchScreen.storyboard */,
 				9E13114D23FEC51B00622A18 /* Info.plist */,
+				DA27AE0123FECE66001E5501 /* GameViewController1.swift */,
+				DA27AE0323FECEA6001E5501 /* GameScene1.sks */,
+				DA27AE0523FECEE1001E5501 /* GameScene.swift */,
 			);
 			path = Quleo;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 			files = (
 				9E13114C23FEC51B00622A18 /* LaunchScreen.storyboard in Resources */,
 				9E13114923FEC51B00622A18 /* Assets.xcassets in Resources */,
+				DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */,
 				9E13114723FEC50500622A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */,
 				9E13114423FEC50500622A18 /* ViewController.swift in Sources */,
 				9E13114023FEC50500622A18 /* AppDelegate.swift in Sources */,
+				DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */,
 				9E13114223FEC50500622A18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
