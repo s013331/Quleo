@@ -12,6 +12,9 @@ class GameScene: SKScene{
     
     var player: SKSpriteNode!
     
+    override func sceneDidLoad() {
+        createPlayer()
+    }
     
     override func didMove(to view: SKView) {
         createPlayer()
