@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBAction func goToGame(_ sender: UIButton) {
+
+    }
+    
     override func viewDidLoad() {
         //
         super.viewDidLoad()
     }
-
 
 }
 
