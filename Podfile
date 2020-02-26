@@ -6,7 +6,7 @@ target 'Quleo' do
   use_frameworks!
 
   # Pods for Quleo
-	
+	pod 'Firebase'
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Analytics'
