@@ -42,6 +42,7 @@ class GameScene1: SKScene{
             player.zPosition = 10
             gameState = .playing
             createBackground()
+            createBox()
 
             break;
       
@@ -66,7 +67,7 @@ class GameScene1: SKScene{
        let playerTexture = SKTexture(imageNamed: "frog1")
         player = SKSpriteNode(texture: playerTexture)
         player.zPosition = -40
-        player.position = CGPoint(x: 60, y: 160)
+        player.position = CGPoint(x: 60, y: 360)
 
         addChild(player)
         print("child added")
@@ -108,4 +109,20 @@ class GameScene1: SKScene{
 //        gameOver.alpha = 0
 //        addChild(gameOver)
     }
+    
+    func createBox(){
+        let box = SKSpriteNode(color: UIColor(hue: 0.55, saturation: 0.14, brightness: 0.97, alpha: 1), size: CGSize(width: frame.width - 20, height: frame.height * 0.4))
+        box.position = CGPoint(x: frame.midX, y: 100)
+        box.zPosition = 20
+        addChild(box)
+    }
+    
+    func addObstacle(){
+        
+    }
+    
+    
+    
 }
+
+
