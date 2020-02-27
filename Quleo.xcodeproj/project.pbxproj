@@ -17,7 +17,7 @@
 		9E13116223FEC51C00622A18 /* QuleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13116123FEC51C00622A18 /* QuleoUITests.swift */; };
 		DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0123FECE66001E5501 /* GameViewController1.swift */; };
 		DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27AE0323FECEA6001E5501 /* GameScene1.sks */; };
-		DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene.swift */; };
+		DA27AE0623FECEE1001E5501 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		9E13116323FEC51C00622A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA27AE0123FECE66001E5501 /* GameViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController1.swift; sourceTree = "<group>"; };
 		DA27AE0323FECEA6001E5501 /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
-		DA27AE0523FECEE1001E5501 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DA27AE0523FECEE1001E5501 /* GameScene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				9E13114D23FEC51B00622A18 /* Info.plist */,
 				DA27AE0123FECE66001E5501 /* GameViewController1.swift */,
 				DA27AE0323FECEA6001E5501 /* GameScene1.sks */,
-				DA27AE0523FECEE1001E5501 /* GameScene.swift */,
+				DA27AE0523FECEE1001E5501 /* GameScene1.swift */,
 			);
 			path = Quleo;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */,
+				DA27AE0623FECEE1001E5501 /* GameScene1.swift in Sources */,
 				9E13114423FEC50500622A18 /* ViewController.swift in Sources */,
 				9E13114023FEC50500622A18 /* AppDelegate.swift in Sources */,
 				DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */,
