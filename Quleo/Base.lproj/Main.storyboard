@@ -30,7 +30,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-97"/>
+            <point key="canvasLocation" x="-339" y="-135"/>
         </scene>
         <!--Roll View Controller-->
         <scene sceneID="Lsm-8A-O46">
@@ -64,12 +64,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z14-gc-uyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="-97"/>
+            <point key="canvasLocation" x="535" y="-134"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Log In View Controller-->
         <scene sceneID="3Ne-BQ-zOg">
             <objects>
-                <viewController id="ktY-J5-hh0" sceneMemberID="viewController">
+                <viewController id="ktY-J5-hh0" customClass="StudentLogInViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MuM-yF-7iQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,12 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVF-JW-0fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334.7826086956522" y="270.53571428571428"/>
+            <point key="canvasLocation" x="1335" y="457"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Main View Controller-->
         <scene sceneID="KIp-9v-lXO">
             <objects>
-                <viewController id="Ste-ef-1Ss" sceneMemberID="viewController">
+                <viewController id="Ste-ef-1Ss" customClass="StudentMainViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gej-fH-ih7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7G4-6O-Lvx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261" y="340"/>
+            <point key="canvasLocation" x="2261" y="457"/>
         </scene>
         <!--Teacher Choice View Controller-->
         <scene sceneID="qg8-cz-pUC">
@@ -152,12 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vB6-uc-CvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="-459"/>
+            <point key="canvasLocation" x="1335" y="-723"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Log In View Controller-->
         <scene sceneID="d1m-lO-TMp">
             <objects>
-                <viewController id="q4x-nM-Vtg" sceneMemberID="viewController">
+                <viewController id="q4x-nM-Vtg" customClass="TeacherLogInViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RGM-cN-qCx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,15 +178,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZO9-a8-fCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261" y="-346"/>
+            <point key="canvasLocation" x="2261" y="-481"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Main View Controller-->
         <scene sceneID="tS3-dc-0iI">
             <objects>
-                <viewController id="xcj-jn-84M" sceneMemberID="viewController">
+                <viewController id="xcj-jn-84M" customClass="TeacherMainViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2v-kV-jSa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm0-kJ-tu6">
+                                <rect key="frame" x="152" y="126" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Set"/>
+                                <connections>
+                                    <segue destination="kZz-RB-EIc" kind="show" id="8H1-eu-gdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-Mg-fIB">
+                                <rect key="frame" x="147" y="325" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chosoe Set"/>
+                                <connections>
+                                    <segue destination="WmT-Uy-A1l" kind="show" id="M9v-kU-zMp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wkA-c5-ZlE"/>
                     </view>
@@ -194,7 +212,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2jr-jF-vVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="-346"/>
+            <point key="canvasLocation" x="3187" y="-481"/>
+        </scene>
+        <!--Play Set View Controller-->
+        <scene sceneID="Q82-6P-wCo">
+            <objects>
+                <viewController id="WmT-Uy-A1l" customClass="PlaySetViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ygw-Np-dzx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="x9O-7d-Hlx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m3o-oo-wIg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhU-yL-VGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4122" y="-204"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aVW-Dj-iJe">
+            <objects>
+                <viewController id="kZz-RB-EIc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3u-44-5Zp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MkC-Dv-x6c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o1N-Xu-HF0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpa-Mb-5uq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4122" y="-852"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="T6X-uR-XjX">
@@ -210,12 +260,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAK-Tm-FcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="340"/>
+            <point key="canvasLocation" x="3187" y="457"/>
         </scene>
-        <!--View Controller-->
+        <!--Leaderboard View Controller-->
         <scene sceneID="RVF-6V-Rw6">
             <objects>
-                <viewController id="xPo-eC-WjT" sceneMemberID="viewController">
+                <viewController id="xPo-eC-WjT" customClass="LeaderboardViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8CH-4d-0bf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mZ-eM-1vE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4042" y="340"/>
+            <point key="canvasLocation" x="4122" y="457"/>
         </scene>
         <!--Teacher Sign Up View Controller-->
         <scene sceneID="mpq-C7-x0Y">
@@ -248,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6j-qu-zsI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2262" y="-986"/>
+            <point key="canvasLocation" x="2261" y="-1128"/>
         </scene>
     </scenes>
 </document>
