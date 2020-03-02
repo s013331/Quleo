@@ -10,7 +10,7 @@ import Foundation
 
 class studySetObject{
     var set : [String:String]
-    var name: String
+    var name : String
     
     init(){
         set = [:]
