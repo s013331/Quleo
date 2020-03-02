@@ -14,6 +14,7 @@
 		030E310E2408102C005D5CC3 /* StudentLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310D2408102C005D5CC3 /* StudentLogInViewController.swift */; };
 		030E311024081039005D5CC3 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310F24081039005D5CC3 /* StudentMainViewController.swift */; };
 		030E311224081044005D5CC3 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E311124081044005D5CC3 /* LeaderboardViewController.swift */; };
+		030E3114240C97C0005D5CC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */; };
 		03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40524002E5F0010CE3A /* RollViewController.swift */; };
 		03BBB40824002F4C0010CE3A /* TeacherChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */; };
 		03BBB40A24002F6D0010CE3A /* TeacherSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */; };
@@ -58,6 +59,7 @@
 		030E310D2408102C005D5CC3 /* StudentLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLogInViewController.swift; sourceTree = "<group>"; };
 		030E310F24081039005D5CC3 /* StudentMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainViewController.swift; sourceTree = "<group>"; };
 		030E311124081044005D5CC3 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03BBB40524002E5F0010CE3A /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChoiceViewController.swift; sourceTree = "<group>"; };
 		03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				9E13114823FEC51B00622A18 /* Assets.xcassets */,
 				9E13114A23FEC51B00622A18 /* LaunchScreen.storyboard */,
 				9E13114D23FEC51B00622A18 /* Info.plist */,
+				030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */,
 				DA27AE0123FECE66001E5501 /* GameViewController1.swift */,
 				DA27AE0323FECEA6001E5501 /* GameScene1.sks */,
 				DA27AE0523FECEE1001E5501 /* GameScene.swift */,
@@ -305,6 +308,7 @@
 			files = (
 				9E13114C23FEC51B00622A18 /* LaunchScreen.storyboard in Resources */,
 				9E13114923FEC51B00622A18 /* Assets.xcassets in Resources */,
+				030E3114240C97C0005D5CC3 /* GoogleService-Info.plist in Resources */,
 				DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */,
 				9E13114723FEC50500622A18 /* Main.storyboard in Resources */,
 			);

@@ -284,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="2261" y="-1128"/>
         </scene>
-        <!--View Controller-->
+        <!--Study Set View Controller-->
         <scene sceneID="EKA-BX-KZc">
             <objects>
-                <viewController id="j8d-iI-B5z" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j8d-iI-B5z" customClass="StudySetViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NcG-pq-d7q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

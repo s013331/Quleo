@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StudySetViewController: UIViewController {
     
     
     var studySet : [String:String] = [:]
