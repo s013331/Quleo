@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class StudySetViewController: UIViewController {
     
@@ -20,6 +22,8 @@ class StudySetViewController: UIViewController {
     @IBOutlet weak var defInput: UITextField!
     @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var setDisplay: UITextView!
+    
+    var databaseRef=Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,11 +56,18 @@ class StudySetViewController: UIViewController {
     }
     
     @IBAction func completeSet(_ sender: UIButton) {
+        
+        var setJson: String
         set.set = studySet
         if let name = Name.text{
             set.name = name
         }
         
+       
+        
+        guard let uid=Auth.auth().currentUser?.uid else {return}
+        databaseRef.child("users").child(uid).child("Sets").setValue(setJson)
+    
     }
     
 }

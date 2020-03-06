@@ -8,17 +8,7 @@
 
 import Foundation
 
-class studySetObject{
+struct studySetObject: Codable{
     var set : [String:String]
     var name : String
-    
-    init(){
-        set = [:]
-        name = "default"
-    }
-    init(dic: [String:String],nam : String){
-        set = dic
-        name = nam
-    }
-    
 }
