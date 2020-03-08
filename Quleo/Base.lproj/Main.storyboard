@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Begin"/>
                                 <connections>
-                                    <segue destination="g38-Fn-OFj" kind="show" id="sEV-DE-pBU"/>
+                                    <segue destination="g38-Fn-OFj" kind="show" id="fwy-Ny-AkL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,7 +47,7 @@
                                 <state key="normal" title="game"/>
                                 <connections>
                                     <action selector="goToGame:" destination="pw7-LJ-srv" eventType="touchUpInside" id="nX5-aT-4RN"/>
-                                    <segue destination="sHY-mf-HBB" kind="show" id="WWm-Ui-IJ9"/>
+                                    <segue destination="sHY-mf-HBB" kind="show" id="OgP-Mx-9iZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGa-bg-9be" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149" y="481"/>
+            <point key="canvasLocation" x="3148" y="490"/>
         </scene>
         <!--Leaderboard View Controller-->
         <scene sceneID="Xdy-3e-sOn">
@@ -89,13 +89,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27W-ZW-g3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="457"/>
+            <point key="canvasLocation" x="4122" y="490"/>
         </scene>
-        <!--View Controller-->
+        <!--Study Set View Controller-->
         <scene sceneID="zut-WQ-k4k">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nr0-kv-Zzr" sceneMemberID="firstResponder"/>
-                <viewController id="lZm-nN-gCr" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lZm-nN-gCr" customClass="StudySetViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50W-MP-UNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +108,7 @@
                                 </state>
                                 <connections>
                                     <action selector="completeSet:" destination="lZm-nN-gCr" eventType="touchUpInside" id="iqd-y5-hnb"/>
-                                    <segue destination="E8e-zK-7J3" kind="show" id="w9L-YV-z2V"/>
+                                    <segue destination="E8e-zK-7J3" kind="show" id="GDN-5j-Yp6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wS-pf-eK6">
@@ -209,13 +208,14 @@
                         <outlet property="setDisplay" destination="0gt-Jb-QaB" id="Nzy-4X-v5a"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nr0-kv-Zzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1835" y="-1054"/>
         </scene>
-        <!--View Controller-->
+        <!--Roll View Controller-->
         <scene sceneID="Ulk-hw-J0Z">
             <objects>
-                <viewController id="g38-Fn-OFj" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g38-Fn-OFj" customClass="RollViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2d-cn-Qg5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,7 +229,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W3j-Y9-U7m" kind="show" id="f8F-w6-9aa"/>
+                                    <segue destination="W3j-Y9-U7m" kind="show" id="iU0-dx-ghb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-zf-dQq">
@@ -241,7 +241,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="avp-Up-JWR" kind="show" id="K5s-ns-dRO"/>
+                                    <segue destination="avp-Up-JWR" kind="show" id="Fbp-D6-y0S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="-1620" y="-72"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Choice View Controller-->
         <scene sceneID="y1D-X2-Fdw">
             <objects>
-                <viewController id="W3j-Y9-U7m" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W3j-Y9-U7m" customClass="TeacherChoiceViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKb-jL-pp6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="umq-Xh-E0V" kind="show" id="spb-Uf-psU"/>
+                                    <segue destination="umq-Xh-E0V" kind="show" id="d00-Ms-Yp9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IY-cm-WLX">
@@ -283,7 +283,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tlt-o2-ufK" kind="show" id="XEI-D8-Tke"/>
+                                    <segue destination="tlt-o2-ufK" kind="show" id="Ctz-Tj-L7Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -291,15 +291,18 @@
                         <viewLayoutGuide key="safeArea" id="Saw-dQ-JSy"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xxk-Gp-Wq5"/>
+                    <connections>
+                        <segue destination="E8e-zK-7J3" kind="show" id="0RG-Bb-jgs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhq-ps-ujf" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-819" y="-721"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Log In View Controller-->
         <scene sceneID="sSK-A7-vIx">
             <objects>
-                <viewController id="umq-Xh-E0V" sceneMemberID="viewController">
+                <viewController id="umq-Xh-E0V" customClass="TeacherLogInViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZe-x3-BDU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,7 +342,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="E8e-zK-7J3" kind="show" id="N1l-Oj-jwk"/>
+                                    <segue destination="E8e-zK-7J3" kind="show" id="ODb-lO-EJO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -352,10 +355,10 @@
             </objects>
             <point key="canvasLocation" x="12" y="-1054"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Main View Controller-->
         <scene sceneID="SBA-od-ejB">
             <objects>
-                <viewController id="E8e-zK-7J3" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E8e-zK-7J3" customClass="TeacherMainViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="adG-H9-JoG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +372,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lZm-nN-gCr" kind="show" id="Eue-kR-Zmn"/>
+                                    <segue destination="lZm-nN-gCr" kind="show" id="XxQ-hn-l1e"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-EM-TtD">
@@ -396,10 +399,10 @@
             </objects>
             <point key="canvasLocation" x="904" y="-1054"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Sign Up View Controller-->
         <scene sceneID="S7M-fB-DPy">
             <objects>
-                <viewController id="tlt-o2-ufK" sceneMemberID="viewController">
+                <viewController id="tlt-o2-ufK" customClass="TeacherSignUpViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E3f-nZ-f1t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -439,7 +442,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W3j-Y9-U7m" kind="show" id="4xo-mb-lCB"/>
+                                    <segue destination="W3j-Y9-U7m" kind="show" id="CQJ-KC-0bc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -452,10 +455,10 @@
             </objects>
             <point key="canvasLocation" x="12" y="-269"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Choice View Controller-->
         <scene sceneID="xXm-zb-Tp0">
             <objects>
-                <viewController id="avp-Up-JWR" customClass="ViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="avp-Up-JWR" customClass="StudentChoiceViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWl-Ff-OjX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +472,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ejv-pP-Y5l" kind="show" id="Mbg-rI-h8T"/>
+                                    <segue destination="ejv-pP-Y5l" kind="show" id="M7G-73-dxN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xC0-IS-pyh">
@@ -481,7 +484,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zYw-X8-k8i" kind="show" id="CLE-6Q-9cZ"/>
+                                    <segue destination="zYw-X8-k8i" kind="show" id="wYv-mq-DOh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -489,15 +492,18 @@
                         <viewLayoutGuide key="safeArea" id="qzp-uF-k5O"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ez0-xi-NAw"/>
+                    <connections>
+                        <segue destination="roL-Wu-Tm0" kind="show" id="he8-mL-rF8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBC-6I-Kph" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-820" y="679"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Log In View Controller-->
         <scene sceneID="CUa-Cr-cxe">
             <objects>
-                <viewController id="ejv-pP-Y5l" sceneMemberID="viewController">
+                <viewController id="ejv-pP-Y5l" customClass="TeacherLogInViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KfA-SJ-ahd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,7 +543,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="roL-Wu-Tm0" kind="show" id="oCL-av-458"/>
+                                    <segue destination="roL-Wu-Tm0" kind="show" id="BEb-0X-AHz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -550,10 +556,10 @@
             </objects>
             <point key="canvasLocation" x="12" y="490"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Sign Up View Controller-->
         <scene sceneID="Fwu-bF-eIV">
             <objects>
-                <viewController id="zYw-X8-k8i" sceneMemberID="viewController">
+                <viewController id="zYw-X8-k8i" customClass="StudentSignUpViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TDx-Vk-4HO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -593,7 +599,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="avp-Up-JWR" kind="show" id="M0J-fl-i3D"/>
+                                    <segue destination="avp-Up-JWR" kind="show" id="CgM-zf-byF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -606,10 +612,10 @@
             </objects>
             <point key="canvasLocation" x="12" y="1184"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Code View Controller-->
         <scene sceneID="FHJ-x4-fxQ">
             <objects>
-                <viewController id="roL-Wu-Tm0" sceneMemberID="viewController">
+                <viewController id="roL-Wu-Tm0" customClass="StudentCodeViewController" customModule="Quleo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PxS-FT-b2B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +642,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6fi-3a-55Y" kind="show" id="9lb-VM-bWl"/>
+                                    <segue destination="6fi-3a-55Y" kind="show" id="86R-uR-YpZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -651,8 +657,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M0J-fl-i3D"/>
-        <segue reference="N1l-Oj-jwk"/>
-        <segue reference="4xo-mb-lCB"/>
+        <segue reference="wYv-mq-DOh"/>
+        <segue reference="he8-mL-rF8"/>
+        <segue reference="CgM-zf-byF"/>
+        <segue reference="GDN-5j-Yp6"/>
+        <segue reference="CQJ-KC-0bc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		030E310624080FA3005D5CC3 /* TeacherLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310524080FA3005D5CC3 /* TeacherLogInViewController.swift */; };
 		030E310824080FB0005D5CC3 /* TeacherMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310724080FB0005D5CC3 /* TeacherMainViewController.swift */; };
-		030E310C24080FDD005D5CC3 /* PlaySetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310B24080FDD005D5CC3 /* PlaySetViewController.swift */; };
 		030E310E2408102C005D5CC3 /* StudentLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310D2408102C005D5CC3 /* StudentLogInViewController.swift */; };
 		030E311024081039005D5CC3 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E310F24081039005D5CC3 /* StudentMainViewController.swift */; };
 		030E311224081044005D5CC3 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E311124081044005D5CC3 /* LeaderboardViewController.swift */; };
 		030E3114240C97C0005D5CC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */; };
+		030E311624129C35005D5CC3 /* StudentCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E311524129C35005D5CC3 /* StudentCodeViewController.swift */; };
+		030E311824129C43005D5CC3 /* StudentChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E311724129C43005D5CC3 /* StudentChoiceViewController.swift */; };
+		030E311A24129C5D005D5CC3 /* StudentSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E311924129C5D005D5CC3 /* StudentSignUpViewController.swift */; };
 		03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40524002E5F0010CE3A /* RollViewController.swift */; };
 		03BBB40824002F4C0010CE3A /* TeacherChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */; };
 		03BBB40A24002F6D0010CE3A /* TeacherSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */; };
@@ -54,11 +56,13 @@
 /* Begin PBXFileReference section */
 		030E310524080FA3005D5CC3 /* TeacherLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLogInViewController.swift; sourceTree = "<group>"; };
 		030E310724080FB0005D5CC3 /* TeacherMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherMainViewController.swift; sourceTree = "<group>"; };
-		030E310B24080FDD005D5CC3 /* PlaySetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetViewController.swift; sourceTree = "<group>"; };
 		030E310D2408102C005D5CC3 /* StudentLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLogInViewController.swift; sourceTree = "<group>"; };
 		030E310F24081039005D5CC3 /* StudentMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainViewController.swift; sourceTree = "<group>"; };
 		030E311124081044005D5CC3 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		030E311524129C35005D5CC3 /* StudentCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCodeViewController.swift; sourceTree = "<group>"; };
+		030E311724129C43005D5CC3 /* StudentChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentChoiceViewController.swift; sourceTree = "<group>"; };
+		030E311924129C5D005D5CC3 /* StudentSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSignUpViewController.swift; sourceTree = "<group>"; };
 		03BBB40524002E5F0010CE3A /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChoiceViewController.swift; sourceTree = "<group>"; };
 		03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpViewController.swift; sourceTree = "<group>"; };
@@ -172,12 +176,14 @@
 				03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */,
 				030E310524080FA3005D5CC3 /* TeacherLogInViewController.swift */,
 				030E310724080FB0005D5CC3 /* TeacherMainViewController.swift */,
-				030E310B24080FDD005D5CC3 /* PlaySetViewController.swift */,
 				030E310D2408102C005D5CC3 /* StudentLogInViewController.swift */,
 				030E310F24081039005D5CC3 /* StudentMainViewController.swift */,
 				030E311124081044005D5CC3 /* LeaderboardViewController.swift */,
 				591F50D32408133F00ABCCA9 /* StudySetViewController.swift */,
 				591F50D5240813D200ABCCA9 /* StudySetObject.swift */,
+				030E311524129C35005D5CC3 /* StudentCodeViewController.swift */,
+				030E311724129C43005D5CC3 /* StudentChoiceViewController.swift */,
+				030E311924129C5D005D5CC3 /* StudentSignUpViewController.swift */,
 			);
 			path = Quleo;
 			sourceTree = "<group>";
@@ -377,9 +383,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030E311A24129C5D005D5CC3 /* StudentSignUpViewController.swift in Sources */,
 				DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */,
 				03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */,
 				591F50D6240813D200ABCCA9 /* StudySetObject.swift in Sources */,
+				030E311624129C35005D5CC3 /* StudentCodeViewController.swift in Sources */,
 				9E13114423FEC50500622A18 /* ViewController.swift in Sources */,
 				9E13114023FEC50500622A18 /* AppDelegate.swift in Sources */,
 				030E310824080FB0005D5CC3 /* TeacherMainViewController.swift in Sources */,
@@ -387,9 +395,9 @@
 				03BBB40824002F4C0010CE3A /* TeacherChoiceViewController.swift in Sources */,
 				030E311224081044005D5CC3 /* LeaderboardViewController.swift in Sources */,
 				DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */,
-				030E310C24080FDD005D5CC3 /* PlaySetViewController.swift in Sources */,
 				030E311024081039005D5CC3 /* StudentMainViewController.swift in Sources */,
 				591F50D42408133F00ABCCA9 /* StudySetViewController.swift in Sources */,
+				030E311824129C43005D5CC3 /* StudentChoiceViewController.swift in Sources */,
 				9E13114223FEC50500622A18 /* SceneDelegate.swift in Sources */,
 				9EBC05A3240D3E2B002D46D1 /* Leaderboard.swift in Sources */,
 				03BBB40A24002F6D0010CE3A /* TeacherSignUpViewController.swift in Sources */,
