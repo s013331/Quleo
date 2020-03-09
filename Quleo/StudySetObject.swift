@@ -11,4 +11,9 @@ import Foundation
 struct studySetObject: Codable{
     var set : [String:String]
     var name : String
+    
+    init (){
+        set=[String:String]()
+        name=""
+    }
 }
