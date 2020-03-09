@@ -1,20 +1,20 @@
 //
-//  TeacherChoiceViewController.swift
+//  StudentChoiceViewController.swift
 //  Quleo
 //
-//  Created by Fiona Rae (student LM) on 2/21/20.
+//  Created by Fiona Rae (student LM) on 3/6/20.
 //  Copyright © 2020 Jake Ridgway (student LM). All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-class TeacherChoiceViewController: UIViewController {
+class StudentChoiceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         if let _ = Auth.auth().currentUser{
-            self.performSegue(withIdentifier: "toTeacherMainScreen", sender: self)
+            self.performSegue(withIdentifier: "toStudentMainScreen", sender: self)
         }
     }
     
