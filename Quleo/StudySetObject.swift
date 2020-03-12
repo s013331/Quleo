@@ -10,10 +10,12 @@ import Foundation
 
 struct studySetObject: Codable{
     var set : [String:String]
+    var competitors: [String:Int]
     var name : String
     
     init (){
         set=[String:String]()
+        competitors=[String:Int]()
         name=""
     }
 }

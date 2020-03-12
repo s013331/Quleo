@@ -57,16 +57,22 @@ class StudySetViewController: UIViewController {
     
     @IBAction func completeSet(_ sender: UIButton) {
         
-        var setJson: String
+        var setJson: Data
+        
         set.set = studySet
         if let name = Name.text{
             set.name = name
         }
+        do{
+            setJson=try JSONEncoder().encode(set)
+            guard let uid=Auth.auth().currentUser?.uid else {return}
+        databaseRef.child("users").child(uid).child("Sets").child(set.name).setValue(setJson)
+            
+        }catch let jsonErr{
+            print("\(jsonErr)")
+        }
         
-       
         
-        guard let uid=Auth.auth().currentUser?.uid else {return}
-        databaseRef.child("users").child(uid).child("Sets").setValue(setJson)
     
     }
     
