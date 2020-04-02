@@ -203,6 +203,21 @@
                     <view key="view" contentMode="scaleToFill" id="e6J-mq-rFU" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0V-Ij-e7S">
+                                <rect key="frame" x="129" y="0.0" width="158" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Return Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ste-ef-1Ss" kind="show" id="BPb-2k-F6y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BTH-Kh-jD3"/>
                     </view>
@@ -210,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAK-Tm-FcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="271"/>
+            <point key="canvasLocation" x="3186.9565217391305" y="270.53571428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RVF-6V-Rw6">
@@ -251,4 +266,7 @@
             <point key="canvasLocation" x="2262" y="-986"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BPb-2k-F6y"/>
+    </inferredMetricsTieBreakers>
 </document>

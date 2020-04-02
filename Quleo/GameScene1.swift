@@ -31,7 +31,7 @@ class GameScene1: SKScene{
      var clicked = 1
     var gameState = GameState.begin
     var logo: SKSpriteNode!
-    var list : [String : String] = ["Asher":"Dayanim", "Robert": "Silver", "Cece":"Ray", "Jake":"Ridgeway", "Mr. ":"Swope"]
+    var list : [String : String] = ["Asher":"Dayanim", "Robert": "Silver", "Cece":"Ray", "Jake":"Ridgeway", "Mr. ":"Swope"] //needs to be a global variable
     var terms : [String] = []
     var definitions : [String] = []
     var choice = 0
@@ -39,9 +39,10 @@ class GameScene1: SKScene{
     var timer = Timer()
     var warningSign : SKSpriteNode!
     var hit = false
-    var score = 0
+    var score = 0 //needs to be a global variable
     var scoreLabel : SKLabelNode!
     var replayButton : SKSpriteNode!
+    var deathScreen : SKSpriteNode!
     
     
 //    override func sceneDidLoad() {
@@ -50,6 +51,7 @@ class GameScene1: SKScene{
     
     override func didMove(to view: SKView) {
         createLogos()
+        createBackground1()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -62,9 +64,9 @@ class GameScene1: SKScene{
             let sequence = SKAction.sequence([fadeOut, wait, remove])
             score = 0
             logo.run(sequence)
+            removeAllChildren()
             createPlayer()
             player.zPosition = 10
-            createBackground()
             displayScore()
           
             timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(addWarning), userInfo: nil, repeats: true)
@@ -76,6 +78,7 @@ class GameScene1: SKScene{
             
             createBox()
             gameState = .playing
+            createBackground1()
 
         break;
       
@@ -111,23 +114,28 @@ class GameScene1: SKScene{
             //uh oh!
             timer.invalidate()
             removeAllChildren()
+            createDeathScreen()
             displayScore()
-            makeReplayButton()
+           // makeReplayButton()
              
-            for touch in touches {
-                timer.invalidate()
-                let location = touch.location(in: self)
-                let touchedNode = atPoint(location)
+           // for touch in touches {
+                //timer.invalidate()
+                //let location = touch.location(in: self)
+//                let touchedNode = atPoint(location)
+//
+//                if touchedNode.name == "replay" {
+//                    removeAllChildren()
+//                     hit = false
+                    
+                    
+//                     createLogos()
+//                    createBackground1()
+//                    gameState = .begin
+                    
+                    
+     //           }
+    //        }
 
-                if touchedNode.name == "replay" {
-                    removeAllChildren()
-                     hit = false
-                     createLogos()
-                    gameState = .begin
-                }
-            }
-            
-            
             break;
     }
         
@@ -149,7 +157,9 @@ class GameScene1: SKScene{
         player.run(runForever)
     }
     
-    func createBackground() {
+
+    
+    func createBackground1() {
         let backgroundTexture = SKTexture(imageNamed: "background")
 
             let background = SKSpriteNode(texture: backgroundTexture)
@@ -165,13 +175,15 @@ class GameScene1: SKScene{
                 let moveReset = SKAction.moveBy(x: 0, y: backgroundTexture.size().height, duration: 0)
                 let moveLoop = SKAction.sequence([moveDown, moveReset])
                 let moveForever = SKAction.repeatForever(moveLoop)
+                if gameState == GameState.playing {
                 background.run(moveForever)
+                }
             }
         }
   
     func createLogos() {
-        logo = SKSpriteNode(imageNamed: "iowa")
-        logo.position = CGPoint(x: frame.midX, y: frame.midY)
+        logo = SKSpriteNode(imageNamed: "frog")
+        logo.position = CGPoint(x: 80, y: 370)
         addChild(logo)
         
 //        gameOver = SKSpriteNode(imageNamed: "gameover")
@@ -379,10 +391,18 @@ class GameScene1: SKScene{
     
     func makeReplayButton(){
         replayButton = SKSpriteNode(imageNamed: "replay" )
-         replayButton.position = CGPoint(x: frame.midX, y: 300)
+         replayButton.position = CGPoint(x: frame.midX, y: 50)
         replayButton.zPosition = 50
         replayButton.name = "replay"
         addChild(replayButton)
     }
+    
+    func createDeathScreen(){
+        deathScreen = SKSpriteNode(imageNamed: "death")
+        deathScreen.position = CGPoint(x: frame.midX, y: frame.midY)
+        deathScreen.zPosition = 0
+        addChild(deathScreen)
+    }
+    
     
 }

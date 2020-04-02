@@ -22,6 +22,8 @@ class GameViewController: UIViewController {
                 scene.scaleMode = .aspectFill
                 // Present the scene
                 view.presentScene(scene)
+           
+                    
             }
             
             view.ignoresSiblingOrder = true
@@ -47,4 +49,6 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    
 }
