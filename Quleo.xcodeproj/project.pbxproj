@@ -31,10 +31,10 @@
 		9E13114C23FEC51B00622A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E13114A23FEC51B00622A18 /* LaunchScreen.storyboard */; };
 		9E13115723FEC51C00622A18 /* QuleoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13115623FEC51C00622A18 /* QuleoTests.swift */; };
 		9E13116223FEC51C00622A18 /* QuleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13116123FEC51C00622A18 /* QuleoUITests.swift */; };
+		DA27AE0223FECE66001E5501 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0123FECE66001E5501 /* GameViewController.swift */; };
 		9EBC05A3240D3E2B002D46D1 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBC05A2240D3E2A002D46D1 /* Leaderboard.swift */; };
-		DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0123FECE66001E5501 /* GameViewController1.swift */; };
 		DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27AE0323FECEA6001E5501 /* GameScene1.sks */; };
-		DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene.swift */; };
+		DA27AE0623FECEE1001E5501 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,11 +86,11 @@
 		9E13115D23FEC51C00622A18 /* QuleoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuleoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E13116123FEC51C00622A18 /* QuleoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuleoUITests.swift; sourceTree = "<group>"; };
 		9E13116323FEC51C00622A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA27AE0123FECE66001E5501 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9EBC05A2240D3E2A002D46D1 /* Leaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		C4D3311C182E83F88A122F87 /* Pods-Quleo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quleo.release.xcconfig"; path = "Target Support Files/Pods-Quleo/Pods-Quleo.release.xcconfig"; sourceTree = "<group>"; };
-		DA27AE0123FECE66001E5501 /* GameViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController1.swift; sourceTree = "<group>"; };
 		DA27AE0323FECEA6001E5501 /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
-		DA27AE0523FECEE1001E5501 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DA27AE0523FECEE1001E5501 /* GameScene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +169,10 @@
 				9E13114823FEC51B00622A18 /* Assets.xcassets */,
 				9E13114A23FEC51B00622A18 /* LaunchScreen.storyboard */,
 				9E13114D23FEC51B00622A18 /* Info.plist */,
-				030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */,
-				DA27AE0123FECE66001E5501 /* GameViewController1.swift */,
+				DA27AE0123FECE66001E5501 /* GameViewController.swift */,
 				DA27AE0323FECEA6001E5501 /* GameScene1.sks */,
-				DA27AE0523FECEE1001E5501 /* GameScene.swift */,
+				DA27AE0523FECEE1001E5501 /* GameScene1.swift */,
+				030E3113240C97C0005D5CC3 /* GoogleService-Info.plist */,
 				03BBB40524002E5F0010CE3A /* RollViewController.swift */,
 				03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */,
 				03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */,
@@ -386,8 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA27AE0623FECEE1001E5501 /* GameScene1.swift in Sources */,
+				DA27AE0223FECE66001E5501 /* GameViewController.swift in Sources */,
 				030E311A24129C5D005D5CC3 /* StudentSignUpViewController.swift in Sources */,
-				DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */,
 				03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */,
 				591F50D6240813D200ABCCA9 /* StudySetObject.swift in Sources */,
 				03D0919A2436D6860078FBA4 /* GameScene1.swift in Sources */,
@@ -398,7 +399,6 @@
 				030E310E2408102C005D5CC3 /* StudentLogInViewController.swift in Sources */,
 				03BBB40824002F4C0010CE3A /* TeacherChoiceViewController.swift in Sources */,
 				030E311224081044005D5CC3 /* LeaderboardViewController.swift in Sources */,
-				DA27AE0223FECE66001E5501 /* GameViewController1.swift in Sources */,
 				030E311024081039005D5CC3 /* StudentMainViewController.swift in Sources */,
 				591F50D42408133F00ABCCA9 /* StudySetViewController.swift in Sources */,
 				030E311824129C43005D5CC3 /* StudentChoiceViewController.swift in Sources */,
