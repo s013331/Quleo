@@ -19,6 +19,7 @@
 		03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40524002E5F0010CE3A /* RollViewController.swift */; };
 		03BBB40824002F4C0010CE3A /* TeacherChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */; };
 		03BBB40A24002F6D0010CE3A /* TeacherSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */; };
+		03D0919A2436D6860078FBA4 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D091992436D6860078FBA4 /* GameScene1.swift */; };
 		591F50D42408133F00ABCCA9 /* StudySetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F50D32408133F00ABCCA9 /* StudySetViewController.swift */; };
 		591F50D6240813D200ABCCA9 /* StudySetObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F50D5240813D200ABCCA9 /* StudySetObject.swift */; };
 		6EC3CF5409B575B3AE0AEE42 /* Pods_Quleo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29246358DFC6AA53781FF16C /* Pods_Quleo.framework */; };
@@ -66,6 +67,7 @@
 		03BBB40524002E5F0010CE3A /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		03BBB40724002F4C0010CE3A /* TeacherChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherChoiceViewController.swift; sourceTree = "<group>"; };
 		03BBB40924002F6D0010CE3A /* TeacherSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpViewController.swift; sourceTree = "<group>"; };
+		03D091992436D6860078FBA4 /* GameScene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
 		0A246F27BABA65C07BF8F371 /* Pods-Quleo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quleo.debug.xcconfig"; path = "Target Support Files/Pods-Quleo/Pods-Quleo.debug.xcconfig"; sourceTree = "<group>"; };
 		29246358DFC6AA53781FF16C /* Pods_Quleo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quleo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591F50D32408133F00ABCCA9 /* StudySetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				030E311524129C35005D5CC3 /* StudentCodeViewController.swift */,
 				030E311724129C43005D5CC3 /* StudentChoiceViewController.swift */,
 				030E311924129C5D005D5CC3 /* StudentSignUpViewController.swift */,
+				03D091992436D6860078FBA4 /* GameScene1.swift */,
 			);
 			path = Quleo;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				DA27AE0623FECEE1001E5501 /* GameScene.swift in Sources */,
 				03BBB40624002E5F0010CE3A /* RollViewController.swift in Sources */,
 				591F50D6240813D200ABCCA9 /* StudySetObject.swift in Sources */,
+				03D0919A2436D6860078FBA4 /* GameScene1.swift in Sources */,
 				030E311624129C35005D5CC3 /* StudentCodeViewController.swift in Sources */,
 				9E13114423FEC50500622A18 /* ViewController.swift in Sources */,
 				9E13114023FEC50500622A18 /* AppDelegate.swift in Sources */,

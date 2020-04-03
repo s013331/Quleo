@@ -10,7 +10,8 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "frog22.png",
+      "filename" : "warning.png",
+      "compression-type" : "gpu-optimized-smallest",
       "scale" : "3x"
     }
   ],
