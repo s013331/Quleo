@@ -379,7 +379,7 @@ class GameScene1: SKScene{
         scoreLabel.zPosition = 50
         scoreLabel.fontName = "Cambria"
         scoreLabel.fontSize =  40
-        scoreLabel.fontColor = UIColor.red
+        scoreLabel.fontColor = UIColor.white
         addChild(scoreLabel)
         
     }

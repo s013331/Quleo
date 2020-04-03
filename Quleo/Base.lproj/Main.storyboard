@@ -67,7 +67,25 @@
                     <view key="view" contentMode="scaleToFill" id="j3F-2M-NYU" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJh-zs-TRo">
+                                <rect key="frame" x="111" y="0.0" width="193" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Return Home">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6fi-3a-55Y" kind="show" id="vMY-oI-nLB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EJh-zs-TRo" firstAttribute="top" secondItem="idD-ic-hfK" secondAttribute="top" id="X4J-tI-LAD"/>
+                            <constraint firstItem="idD-ic-hfK" firstAttribute="trailing" secondItem="EJh-zs-TRo" secondAttribute="trailing" constant="110" id="g5C-0q-H8p"/>
+                            <constraint firstItem="EJh-zs-TRo" firstAttribute="leading" secondItem="idD-ic-hfK" secondAttribute="leading" constant="111" id="kiS-Ur-zcF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="idD-ic-hfK"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kbz-yF-bPf"/>
@@ -554,7 +572,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oC4-mC-4Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3186.9565217391305" y="270.53571428571428"/>
+            <point key="canvasLocation" x="2551" y="-919"/>
         </scene>
         <!--Student Sign Up View Controller-->
         <scene sceneID="Fwu-bF-eIV">
@@ -657,9 +675,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="he8-mL-rF8"/>
+        <segue reference="BEb-0X-AHz"/>
         <segue reference="CgM-zf-byF"/>
         <segue reference="GDN-5j-Yp6"/>
         <segue reference="CQJ-KC-0bc"/>
+        <segue reference="vMY-oI-nLB"/>
     </inferredMetricsTieBreakers>
 </document>
