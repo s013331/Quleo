@@ -533,7 +533,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giu-f0-F1P">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giu-f0-F1P" customClass="usernameTextField">
                                 <rect key="frame" x="36" y="101" width="273" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -546,7 +546,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-P6-e0t">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-P6-e0t" customClass="passwordTextField">
                                 <rect key="frame" x="36" y="227" width="273" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -561,6 +561,7 @@
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="signUpButton:" destination="ZYb-QU-yiM" eventType="touchUpInside" id="vf1-QJ-IMl"/>
                                     <segue destination="roL-Wu-Tm0" kind="show" id="BEb-0X-AHz"/>
                                 </connections>
                             </button>
@@ -571,8 +572,9 @@
                     <navigationItem key="navigationItem" id="vDD-tx-LTS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oC4-mC-4Oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZYb-QU-yiM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="-919"/>
+            <point key="canvasLocation" x="12" y="490"/>
         </scene>
         <!--Student Sign Up View Controller-->
         <scene sceneID="Fwu-bF-eIV">
@@ -659,15 +661,16 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.31780081049999998" green="0.95823558959999999" blue="0.13628224359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="6fi-3a-55Y" kind="show" id="86R-uR-YpZ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="j7A-4K-nib"/>
                     </view>
                     <navigationItem key="navigationItem" id="Np6-yN-3wi"/>
+                    <connections>
+                        <outlet property="studySetID" destination="pz7-JQ-2hA" id="vp2-Po-ADW"/>
+                        <segue destination="6fi-3a-55Y" kind="show" id="N8X-np-CsF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grc-PM-R6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -679,6 +682,6 @@
         <segue reference="CgM-zf-byF"/>
         <segue reference="GDN-5j-Yp6"/>
         <segue reference="CQJ-KC-0bc"/>
-        <segue reference="vMY-oI-nLB"/>
+        <segue reference="N8X-np-CsF"/>
     </inferredMetricsTieBreakers>
 </document>
