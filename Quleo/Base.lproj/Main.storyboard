@@ -678,6 +678,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="XxQ-hn-l1e"/>
         <segue reference="BEb-0X-AHz"/>
         <segue reference="CgM-zf-byF"/>
         <segue reference="GDN-5j-Yp6"/>

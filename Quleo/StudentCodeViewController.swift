@@ -9,17 +9,23 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import FirebaseDatabase
 
 class StudentCodeViewController: UIViewController {
     
     @IBOutlet weak var studySetID: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+//        guard let uid = Auth.auth().currentUser?.uid else {return}
+        var databaseRef=Database.database().reference().child("users").child("Sets")
+        
         if let stringID = studySetID.text{
-//            if let tempStudyID = FirebaseStorage.StorageReference.value(forKey: stringID){
-//                GameStudySet.set(tempStudyID)
-//                self.performSegue(withIdentifier: "toStudentMainScreen", sender: self)
-//            }
+            if let tempStudyID = databaseRef.value(forKey: stringID){
+                databaseRef.child(stringID).observe(.value, with: { DataSnapshot in
+//                    GameStudySet.set(JSONDecoder.decode(DataSnapshot.value!))
+                })
+                self.performSegue(withIdentifier: "toStudentMainScreen", sender: self)
+            }
         }
         
     }

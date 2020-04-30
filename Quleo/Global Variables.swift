@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseStorage
 
 var GameStudySet : studySetObject {
     set (setStudySet){
