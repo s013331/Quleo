@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class TeacherChoiceViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let _ = Auth.auth().currentUser{

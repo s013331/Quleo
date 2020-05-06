@@ -16,6 +16,14 @@ var GameStudySet : studySetObject {
         return GameStudySet
     }
 }
+var StudentName : String{
+    set (studentName){
+        StudentName = studentName
+    }
+    get{
+        return StudentName
+    }
+}
 
 
 
