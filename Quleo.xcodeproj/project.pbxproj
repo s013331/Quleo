@@ -33,7 +33,6 @@
 		9E13115723FEC51C00622A18 /* QuleoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13115623FEC51C00622A18 /* QuleoTests.swift */; };
 		9E13116223FEC51C00622A18 /* QuleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13116123FEC51C00622A18 /* QuleoUITests.swift */; };
 		9EBC05A3240D3E2B002D46D1 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBC05A2240D3E2A002D46D1 /* Leaderboard.swift */; };
-		9EC5D5502465E983009F6652 /* masterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5D54F2465E983009F6652 /* masterInfo.swift */; };
 		DA27AE0223FECE66001E5501 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0123FECE66001E5501 /* GameViewController.swift */; };
 		DA27AE0423FECEA6001E5501 /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27AE0323FECEA6001E5501 /* GameScene1.sks */; };
 		DA27AE0623FECEE1001E5501 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27AE0523FECEE1001E5501 /* GameScene1.swift */; };
@@ -90,7 +89,6 @@
 		9E13116123FEC51C00622A18 /* QuleoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuleoUITests.swift; sourceTree = "<group>"; };
 		9E13116323FEC51C00622A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EBC05A2240D3E2A002D46D1 /* Leaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
-		9EC5D54F2465E983009F6652 /* masterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterInfo.swift; sourceTree = "<group>"; };
 		C4D3311C182E83F88A122F87 /* Pods-Quleo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quleo.release.xcconfig"; path = "Target Support Files/Pods-Quleo/Pods-Quleo.release.xcconfig"; sourceTree = "<group>"; };
 		DA27AE0123FECE66001E5501 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DA27AE0323FECEA6001E5501 /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				030E311924129C5D005D5CC3 /* StudentSignUpViewController.swift */,
 				03D091992436D6860078FBA4 /* GameScene1.swift */,
 				03C2A7A7245A237500525409 /* Global Variables.swift */,
-				9EC5D54F2465E983009F6652 /* masterInfo.swift */,
 			);
 			path = Quleo;
 			sourceTree = "<group>";
@@ -413,7 +410,6 @@
 				9EBC05A3240D3E2B002D46D1 /* Leaderboard.swift in Sources */,
 				03BBB40A24002F6D0010CE3A /* TeacherSignUpViewController.swift in Sources */,
 				030E310624080FA3005D5CC3 /* TeacherLogInViewController.swift in Sources */,
-				9EC5D5502465E983009F6652 /* masterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
