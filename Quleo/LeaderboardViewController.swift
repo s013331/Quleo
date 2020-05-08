@@ -7,25 +7,22 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class LeaderboardViewController: UIViewController {
+class LeaderboardViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    var leaderboard=Leaderboard()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
+        
+        
+        tableView.dataSource=leaderboard
 
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "LeaderBoard")!)
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
