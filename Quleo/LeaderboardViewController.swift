@@ -22,7 +22,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate {
         
         tableView.dataSource=leaderboard
 
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "LeaderBoard")!)
+        
     }
     
 }

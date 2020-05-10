@@ -27,7 +27,7 @@ class StudySetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Adding flash cards")!)
+        
         
     }
     @IBAction func AddTerm(_ sender: UIButton) {
